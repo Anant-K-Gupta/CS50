@@ -1,0 +1,1 @@
+select (name) from stars, movies, people  where movies.id = stars.movie_id and people.id = stars.person_id  and year = 2004 order by birth;

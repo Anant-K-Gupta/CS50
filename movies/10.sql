@@ -1,0 +1,1 @@
+select distinct(name) from movies, directors,ratings, people where movies.id = directors.movie_id and directors.person_id = people.id and ratings.movie_id = movies.id and rating >=9.0;

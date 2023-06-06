@@ -1,0 +1,19 @@
+sort1 uses: Bubble Sort
+
+How do you know?: sort1 and sort3 took a long time sorting random and reversed data as compared to sort2.
+                  Thus it was clear it had to be either selection sort or bubble sort. When sorting pre-sorted
+                  lists sort1 was much faster than sort3 and thus had to be bubble sort as it has a big omega
+                  notation of n as compared to selections sort's n^2.
+
+sort2 uses: Merge Sort
+
+How do you know?: sort2 performed the best in almost all scenarios as compared to sort1 & sort3, especially in sorting
+                  random and reversed data. Also, it was able to give similar sorting times for both reversed and sorted list
+                  and thus had to be merge sort as both it's big O and big Omega notation is log(n)
+
+sort3 uses: Selection Sort
+
+How do you know?: As stated earlier, it was clear from the longer runtimes that one of sort1, sort3 was bubble
+                  sort and the other selection sort. As sort3 performed far worse than sort1 in sorted lists
+                  it had to be selection sort. This is due to the fact that selection sort has a big omega
+                  notation of n^2 as compared to bubble sort's n.

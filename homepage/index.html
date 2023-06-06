@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script>
+        function sayHi() {
+            var image = document.getElementById('profilepic');
+            if (image.src.match("profile_pic.jpg")) {
+                image.class = "one"
+                image.src = "hi_pic.png";
+
+            }
+            else {
+                image.class = "one"
+                image.src = "profile_pic.jpg";
+            }
+        }
+        </script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contactme.html">Contact Me</a>
+            </li>
+        </ul>
+
+        <div class="wrapper">
+        <div><img class = "one" id = "profilepic" src = "profile_pic.jpg"></div>
+        <div class="center">
+        <h1 class="center" margin=20px>Hi! I am Anant K. Gupta</h1>
+        <p>
+        I am a first-year Computer Science student at the University of Edinburgh and this is my homepage!
+        'Anant' meaning "Endless-Unbound" derives its roots from Hindu scriptures.True to my name, I
+        have strived to dissolve boundaries between various domains including those of Academics,
+        Astronomy, Film Making, Instruments, Art and Sports.
+        I have been an academic achiever from my formative years with a particular interest for Computer
+        Science, Mathematics and Physics. I am interested in a career in Computer Science. My motto in life
+        is to try my hand at everything as nothing is big or small, important or insignificant, it's just unique in
+        its own typical way..... apath of self-discovery and enlightenment.
+        </p>
+        </div>
+         <button type = "button" class = "btn btn-primary" onclick = "sayHi()">Say Hi!</button>
+        </div>
+    </body>
+</html>
